@@ -6,5 +6,4 @@ access_template = [
     'spanning-tree bpduguard enable'
 ]
 
-print("\n".join(access_template).format(5))
-print(type(access_template))
+print("\n".join(access_template).format(10))
