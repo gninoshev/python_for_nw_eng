@@ -1,10 +1,10 @@
-a = 5
-b = 6
+access_template = [
+    'switchport mode acceess',
+    'switchport access vlan {}',
+    'switchport nonegotiate',
+    'spanning-tree port fast',
+    'spanning-tree bpduguard enable'
+]
 
-if a > b:
-    print("a is greater than b")
-elif b > a:
-    print("b is greater than a")
-else:
-    print("a and b are equal")
-    
+print("\n".join(access_template).format(5))
+print(type(access_template))
