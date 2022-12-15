@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 
-import dnspython as dns
-import dns.resolver
+# import dns.resolver
+# result = dns.resolver.resolve('google.com', 'A')
+#
+# for ipval in result:
+#     print(ipval.to_text())
+#
+# print(result.nameserver)
 
-result = dns.resolver.query('google.com', 'A')
+import socket
 
-print(result)
+print(f'The IP is {socket.gethostbyname_ex("google.bg")[2][0]}')
