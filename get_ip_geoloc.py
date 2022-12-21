@@ -6,6 +6,7 @@ ip_with_country = {}
 with open('ips.txt', 'r+') as f:
     ip_addresses = [line.strip() for line in f]
 
+
 def get_location(ip_list):
     for ip in ip_list:
         response = requests.get(f'http://www.geoplugin.net/json.gp?ip={ip}', verify=False).json()
