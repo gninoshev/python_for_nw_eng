@@ -18,3 +18,4 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
 print(*product(a, b))
+print(f'it is me')
